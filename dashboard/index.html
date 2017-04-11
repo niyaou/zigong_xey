@@ -6,11 +6,31 @@
     <!-- 引入 Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <meta charset="utf-8">
+    <!-- jQuery (Bootstrap 的 JavaScript 插件需要引入 jQuery) -->
+    <script src="js/jquery.js"></script>
+    <!-- 包括所有已编译的插件 -->
+    <script src="js/bootstrap.min.js"></script>
 </head>
 <body  class="text-center">
-
-
-
+<h2>创建模态框（Modal）</h2>
+<!-- 按钮触发模态框 -->
+<button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">开始演示模态框</button>
+<!-- 模态框（Modal） -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="myModalLabel">模态框（Modal）标题</h4>
+            </div>
+            <div class="modal-body">在这里添加一些文本</div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                <button type="button" class="btn btn-primary">提交更改</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal -->
+</div>
 <div class="container">
     <nav class="navbar navbar-default navbar-fixed-bottom">
 <!--<div class=" navbar-nav">-->
@@ -249,15 +269,67 @@
         </div>
     </div>
     </div>
+
+<!-- 模态框（Modal） -->
+<div class="container">
+    <div class="row clearfix">
+        <div class="col-md-12 column">
+            <div class="panel-group" id="panel-337290">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <a class="panel-title" data-toggle="collapse" data-parent="#panel-337290" href="#panel-element-165648">Collapsible Group Item #1</a>
+                    </div>
+                    <div id="panel-element-165648" class="panel-collapse collapse in">
+                        <div class="panel-body">
+                            Anim pariatur cliche...
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <a class="panel-title" data-toggle="collapse" data-parent="#panel-337290" href="#panel-element-66569">Collapsible Group Item #2</a>
+                    </div>
+                    <div id="panel-element-66569" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            Anim pariatur cliche...
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row clearfix">
+        <div class="col-md-12 column">
+            <div class="list-group">
+                <a href="#" class="list-group-item active">Home</a>
+                <div class="list-group-item">
+                    List header
+                </div>
+                <div class="list-group-item">
+                    <h4 class="list-group-item-heading">
+                        List group item heading
+                    </h4>
+                    <p class="list-group-item-text">
+                        ...
+                    </p>
+                </div>
+                <div class="list-group-item">
+                    <span class="badge">14</span> Help
+                </div> <a class="list-group-item active"> <span class="badge">14</span> Help</a>
+            </div>
+        </div>
+    </div>
+</div>
 <br/>
 <br/>
 <br/>
 <br/>
 </div>
 
-<!-- jQuery (Bootstrap 的 JavaScript 插件需要引入 jQuery) -->
-<script src="js/jquery.js"></script>
-<!-- 包括所有已编译的插件 -->
-<script src="js/bootstrap.min.js"></script>
+
+
+
 </body>
 </html>
