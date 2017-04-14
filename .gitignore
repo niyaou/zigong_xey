@@ -30,6 +30,9 @@ $RECYCLE.BIN/
 
 # Thumbnails
 ._*
+.idea\*
+.idea
+.idea\*.*
 
 # Files that might appear in the root of a volume
 .DocumentRevisions-V100
